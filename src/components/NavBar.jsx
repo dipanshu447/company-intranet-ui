@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function NavBar() {
-    const [darkmode, setdarkMode] = useState(() => {
-        return localStorage.getItem('theme') === 'dark' || document.documentElement.classList.contains('dark');
-    });
+export default function NavBar({ darkmode, setdarkMode }) {
 
     useEffect(() => {
         if (darkmode) {

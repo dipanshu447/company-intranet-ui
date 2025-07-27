@@ -13,10 +13,10 @@ export default function Welcome() {
     })
 
     return (
-        <div className="dark:bg-[#202a3b] shadow-md overflow-visible box-border flex flex-col items-center py-6 gap-2 rounded-2xl">
-            <div className="text-white font-bold text-2xl mb-1">Welcome back, Sarah!</div>
-            <span className="text-white font-semibold text-3xl">{time}</span>
-            <span className="text-[#9da2af]">{date}</span>
+        <div className="bg-[#fff] dark:bg-[#202a3b] shadow-md overflow-visible box-border flex flex-col items-center py-6 gap-2 rounded-2xl flex-2">
+            <div className="text-[#1f2836] dark:text-white font-bold text-2xl mb-1">Welcome back, Sarah!</div>
+            <span className="text-[#1f2836] dark:text-white font-semibold text-3xl">{time}</span>
+            <span className="text-[#6b7381] dark:text-[#9da2af]">{date}</span>
         </div>
     )
 }

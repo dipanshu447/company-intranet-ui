@@ -8,14 +8,14 @@ export default function UpcomingEvent() {
                 <div className="font-bold">{event.date.day}</div>
             </div>
             <div>
-                <div className="text-[#e5e6ea] font-medium text-base">{event.title}</div>
-                <small className="text-[#8d94a1] text-sm">{event.time} - {event.location}</small>
+                <div className="dark:text-[#e5e6ea] font-medium text-base">{event.title}</div>
+                <small className="dark:text-[#8d94a1] text-sm">{event.time} - {event.location}</small>
             </div>
         </div>
-    ))
+    ));
 
     return (
-        <div className="rounded-2xl dark:bg-[#202a3b] shadow-md overflow-visible p-6 flex-5">
+        <div className="rounded-2xl bg-[#fff] dark:bg-[#202a3b] shadow-md overflow-visible p-6 flex-5">
             <span className="text-xl text-[#323233] dark:text-white font-medium">Upcoming Events</span>
             <div className="flex flex-col gap-3">{upevents}</div>
         </div>
