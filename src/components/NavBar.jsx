@@ -13,19 +13,22 @@ export default function NavBar({ darkmode, setdarkMode }) {
     }, [darkmode])
 
     const toggleDarkMode = () => setdarkMode(prev => !prev);
+    const [toggleNav, seToggleNav] = useState(false);
+    const navStyles = {height:`${toggleNav ? "17.5em" : "3.6em"}`}
 
     return (
-        <header className="top-3 w-[95%] rounded-2xl border border-[#cfcfcf] dark:border-[#3f5a77ad] shadow-md overflow-visible sticky z-20 backdrop-blur-md">
+        <header className="top-3 w-[95%] rounded-2xl border border-[#cfcfcf] dark:border-[#3f5a77ad] shadow-md sticky z-20 backdrop-blur-md h-[3.5em] overflow-hidden transition-all duration-300 ease-in-out" style={navStyles}>
             <nav className="flex px-5 py-3 items-center w-full justify-between">
-                <h1 className="text-lg text-[#323233] dark:text-white font-medium">DevHive</h1>
-                <div className="flex gap-6 items-center">
-                    <div className="flex text-[#323233] dark:text-[#f0f0f0] text-sm gap-2">
-                        <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Home</a>
-                        <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Resources</a>
-                        <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Events</a>
-                        <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Annoucement</a>
-                        <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Team</a>
-                    </div>
+                <div className="flex gap-2.5 items-center">
+                    <img src="https://img.icons8.com/?size=100&id=59832&format=png&color=000000" alt="menuIcon" className="object-cover size-6 rounded-4xl cursor-pointer sm:hidden" onClick={() => seToggleNav(prev => !prev)}/>
+                    <h1 className="text-lg text-[#323233] dark:text-white font-medium">DevHive</h1>
+                </div>
+                <div className="sm:flex text-[#323233] dark:text-[#f0f0f0] text-sm gap-2 hidden">
+                    <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Home</a>
+                    <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Resources</a>
+                    <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Events</a>
+                    <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Annoucement</a>
+                    <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Team</a>
                 </div>
                 <div className="flex items-center">
                     <div className="hover:bg-[#e6e6e6] dark:hover:bg-[#354457] p-1 rounded-4xl" onClick={toggleDarkMode}>
@@ -55,6 +58,13 @@ export default function NavBar({ darkmode, setdarkMode }) {
                     <img src="https://i.pinimg.com/1200x/ef/a3/1f/efa31f21b681c3ed3f29c147de99d6aa.jpg" alt="user-profile" className="object-cover w-8 rounded-4xl cursor-pointer ml-3" />
                 </div>
             </nav>
+            <div className="flex text-[#323233] dark:text-[#f0f0f0] text-sm gap-2 flex-col border-t border-[#32323359] sm:hidden">
+                <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Home</a>
+                <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Resources</a>
+                <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Events</a>
+                <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Annoucement</a>
+                <a href="#" className=" hover:bg-[#ececec] dark:hover:bg-[#37465a] px-4 py-2 rounded-xl hover:font-semibold transition-all duration-[0.5s] ease-in-out">Team</a>
+            </div>
         </header>
     )
 }
