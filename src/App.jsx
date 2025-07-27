@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar.jsx";
 import MyTask from "./components/MyTask.jsx";
 import UpcomingEvent from './components/UpcomingEvent.jsx';
+import TeamSpotlight from "./components/TeamSpotlight.jsx";
 
 export default function App() {
   return (
@@ -36,9 +37,7 @@ export default function App() {
           </div>
           <div className="flex gap-6">
             <UpcomingEvent />
-            <div className="rounded-2xl dark:bg-[#202a3b] shadow-md overflow-visible p-6 flex-5">
-              <span className="text-xl text-[#323233] dark:text-white font-medium">Team Spotlight</span>
-            </div>
+            <TeamSpotlight />
           </div>
         </div>
         <div className="flex-3 flex flex-col gap-5">

@@ -35,16 +35,16 @@ export const teamSpotlight = [
   {
     name: "Alice Johnson",
     role: "Lead Frontend Developer",
-    avatar: "/avatars/alice.png" 
+    avatar: "https://i.pinimg.com/736x/b9/e0/e3/b9e0e30ac1ec95077b7e1d0abd250e5d.jpg" 
   },
   {
     name: "Bob Williams",
     role: "Senior UX Designer",
-    avatar: "/avatars/bob.png"
+    avatar: "https://i.pinimg.com/736x/20/13/15/20131556cab70feaa63ee0a7166ea203.jpg"
   },
   {
     name: "Charlie Brown",
     role: "Backend Engineer",
-    avatar: "/avatars/charlie.png"
+    avatar: "https://i.pinimg.com/736x/36/32/ee/3632eeb32ce8dfdd8503d0c29d27f039.jpg"
   }
 ];
