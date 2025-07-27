@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar.jsx";
 import MyTask from "./components/MyTask.jsx";
 import UpcomingEvent from './components/UpcomingEvent.jsx';
 import TeamSpotlight from "./components/TeamSpotlight.jsx";
+import Welcome from "./components/Welcome.jsx";
 
 export default function App() {
   return (
@@ -41,11 +42,7 @@ export default function App() {
           </div>
         </div>
         <div className="flex-3 flex flex-col gap-5">
-          <div className="dark:bg-[#202a3b] shadow-md overflow-visible box-border flex flex-col items-center py-6 gap-2 rounded-2xl">
-            <div className="text-white font-bold text-2xl mb-1">Welcome back, Sarah!</div>
-            <span className="text-white font-semibold text-4xl">10:42 <small>AM</small></span>
-            <span className="text-[#9da2af]">Tuesday, July 26, 2025</span>
-          </div>
+          <Welcome />
           <div className="dark:bg-[#202a3b] shadow-md overflow-visible box-border flex flex-col p-6 gap-2 rounded-2xl ">
             <span className="text-lg text-[#323233] dark:text-white font-medium">Quick Links</span>
             <div className="flex flex-col">
@@ -70,13 +67,13 @@ export default function App() {
           <MyTask />
         </div>
       </main>
-      <footer class="bg-[#1e293b] w-full border-t border-[#334155] py-6 px-8 text-sm text-[#94a3b8]">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p class="text-center sm:text-left">&copy; 2025 DevHive. All rights reserved.</p>
-          <div class="flex gap-4">
-            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" class="hover:text-white transition-colors">Contact</a>
+      <footer className="bg-[#1e293b] w-full border-t border-[#334155] py-6 px-8 text-sm text-[#94a3b8]">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-center sm:text-left">&copy; 2025 DevHive. All rights reserved.</p>
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-white transition-colors">Contact</a>
           </div>
         </div>
       </footer>

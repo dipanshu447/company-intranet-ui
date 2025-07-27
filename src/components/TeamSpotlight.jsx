@@ -2,7 +2,7 @@ import { teamSpotlight } from "../data.js";
 
 export default function TeamSpotlight() {
     const spotlights = teamSpotlight.map(member => (
-        <div className="flex mt-5 gap-4 items-center">
+        <div className="flex mt-5 gap-4 items-center" key={member.name}>
             <img src={member.avatar} alt={member.name} className="object-cover w-11 rounded-4xl" />
             <div>
                 <div className="text-[#e5e6ea] font-medium text-base">{member.name}</div>

@@ -2,7 +2,7 @@ import { upcomingEvents } from "../data.js";
 
 export default function UpcomingEvent() {
     const upevents = upcomingEvents.map(event => (
-        <div className="flex mt-5 gap-4 items-center">
+        <div className="flex mt-5 gap-4 items-center" key={event.title}>
             <div className={`py-1.5 px-3.5 text-center rounded-xl text-white text-sm`} style={{backgroundColor: event.theme}}>
                 <div className="font-semibold">{event.date.month}</div>
                 <div className="font-bold">{event.date.day}</div>
