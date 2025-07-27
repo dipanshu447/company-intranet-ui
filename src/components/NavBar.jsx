@@ -59,7 +59,7 @@ export default function NavBar({ darkmode, setdarkMode }) {
                             />
                         </svg>
                     </div>
-                    <img src="https://i.pinimg.com/1200x/ef/a3/1f/efa31f21b681c3ed3f29c147de99d6aa.jpg" alt="user-profile" className="object-cover w-8 rounded-4xl cursor-pointer ml-3" />
+                    <img src="https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg" alt="user-profile" className="object-cover w-8 rounded-4xl cursor-pointer ml-3" />
                 </div>
             </nav>
             <div className="flex text-[#323233] dark:text-[#f0f0f0] text-sm gap-2 flex-col border-t border-[#32323359] md:hidden">
