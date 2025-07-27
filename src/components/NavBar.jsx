@@ -18,7 +18,7 @@ export default function NavBar() {
     const toggleDarkMode = () => setdarkMode(prev => !prev);
 
     return (
-        <header className="top-3 w-[95%] rounded-2xl dark:bg-[#202a3b] shadow-md overflow-visible sticky z-20 backdrop-blur-md">
+        <header className="top-3 w-[95%] rounded-2xl border border-[#cfcfcf] dark:border-[#3f5a77ad] shadow-md overflow-visible sticky z-20 backdrop-blur-md">
             <nav className="flex px-5 py-3 items-center w-full justify-between">
                 <h1 className="text-lg text-[#323233] dark:text-white font-medium">DevHive</h1>
                 <div className="flex gap-6 items-center">
