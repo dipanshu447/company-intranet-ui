@@ -38,7 +38,7 @@ The UI is minimal yet informative, just what you need to start your day at DevHi
 
 ## Preview
 
-
+![Preview Image](.github/preview.jpg)
 
 ## Getting Started
 
