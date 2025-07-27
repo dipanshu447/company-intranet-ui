@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="flex flex-col items-center bg-[#f2f5f6] dark:bg-[#1a2531] transition-colors">
       <NavBar darkmode={darkmode} setdarkMode={setdarkMode} />
-      <main className="w-full h-full overflow-visible relative z-10 box-border p-8 flex gap-8 flex-row-reverse">
+      <main className="w-full h-full overflow-visible relative z-10 box-border px-4 md:px-8 py-8 flex gap-8 flex-col-reverse md:flex-row-reverse">
         <div className="flex-7 box-border flex flex-col gap-5">
           <div className="rounded-2xl bg-[#fff] dark:bg-[#202a3b] shadow-md overflow-visible p-6">
             <span className="text-xl text-[#323233] dark:text-white font-medium">Announcements</span>
@@ -40,7 +40,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row gap-6">
             <UpcomingEvent />
             <TeamSpotlight />
           </div>
@@ -87,7 +87,7 @@ export default function App() {
           <MyTask />
         </div>
       </main>
-      <footer className="bg-[#fff] dark:bg-[#1e293b] w-full border-t border-[#5a5a5a] dark:border-[#334155] py-6 px-8 text-sm text-[#474747] dark:text-[#94a3b8]">
+      <footer className="bg-[#fff] dark:bg-[#1e293b] w-full border-t border-[#5a5a5a52] dark:border-[#334155] py-6 px-8 text-sm text-[#474747] dark:text-[#94a3b8]">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-center sm:text-left">&copy; 2025 DevHive. All rights reserved.</p>
           <div className="flex gap-4">
