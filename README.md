@@ -19,6 +19,8 @@ This dashboard includes real-time feel widgets like:
 
 The UI is minimal yet informative, just what you need to start your day at DevHive!
 
+![Preview Image](.github/preview.jpg)
+
 ## Tech Stack
 
 * React.js - Component-based structure for dynamic UI
@@ -35,10 +37,6 @@ The UI is minimal yet informative, just what you need to start your day at DevHi
 * Event preview cards with icons and categories
 * Smooth transitions and responsive layout
 * Dark Theme - Modern and gentle on the eyes, suitable for long work sessions
-
-## Preview
-
-![Preview Image](.github/preview.jpg)
 
 ## Getting Started
 
