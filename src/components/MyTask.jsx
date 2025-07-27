@@ -1,7 +1,10 @@
 import { useRef, useState } from "react";
 
 export default function MyTask() {
-    const [task, setTasks] = useState([{ task: "Call from HR", done: true }, { task: "Team Call at 9PM", done: false }]);
+    const [task, setTasks] = useState([
+        { task: "Review quarterly report with HR", done: true },
+        { task: "Team sync-up at 10:00 AM", done: false }
+    ]);
     const inRef = useRef();
     const [newTask, setnewTask] = useState("");
 
